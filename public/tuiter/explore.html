@@ -3,10 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
 </head>
 <body>
-<h1>
-    This is explore page
-</h1>
+<!--<h4>-->
+<!--    back-->
+<!--</h4>-->
+<main id="main">
+    <div class="wd-searchbar-section pos-relative grid-row">
+
+        <span class="wd-searchbar-holder grid-col-half-page">
+            <i class="fas fa-search wd-search-tweet-icon"></i>
+            <input type="text" class="wd-searchbar" size="50"
+                   placeholder="Search Tuiter">
+        </span>
+        <span class="wd-searchbar-setting">
+            <a href="explore-settings.html">
+                <i class="fas fa-cog"></i>
+            </a></span>
+    </div>
+    <div style="margin: 1px"></div>
+    <br>
+    <div class="wd-tab-head">
+        <div>
+            <ul class="wd-tab-list">
+                <li class="active-tab">For You</li>
+                <li>Trending</li>
+                <li>COVID-19</li>
+                <li>News</li>
+                <li>Sports</li>
+                <li>Entertainment</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wd-tab-body">
+        <div>
+            <ul class="wd-post-list">
+                <li class="wd-post-trend-item">
+                    <div>
+
+                        <span class="wd-post-topic">Trending in Science</span>
+                        <span class="wd-tweet-setting">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                        <span class="wd-post-title row">Starship</span>
+                        <span class="wd-post-tweet-count row">55.5K Tweets</span>
+                    </div>
+                </li>
+                <li class="wd-post-trend-item">
+                    <div>
+                        <span class="wd-post-topic">Sports</span>
+                        <span class="wd-post-topic wd-post-tag">Trending</span>
+                        <span class="wd-tweet-setting">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                        <span class="wd-post-title row">Joe Rogan</span>
+                        <span class="wd-post-tweet-count row">5,218 Tweets</span>
+                    </div>
+                </li>
+                <li class="wd-post-article-item">
+                    <div class="wd-left-child">
+                        <span class="wd-post-author">The New York Times
+                        </span>
+                        <i class="fas fa-user-check wd-icon-verified"></i>
+                        <span class="wd-post-topic wd-post-tag">Yesterday</span>
+                        <span class="wd-post-title row">CNN's Cuomo conundrum: A star anchor with a brother in
+                            trouble</span>
+                    </div>
+                    <div class="wd-right-child">
+                        <img src="images/img_news_post.jpeg">
+                    </div>
+
+                </li>
+                <li class="wd-post-article-item">
+                    <div class="wd-left-child">
+                        <span class="wd-post-topic">Covid-19</span>
+                        <span class="wd-post-tag wd-post-topic">LIVE</span>
+
+                        <span class="wd-post-title row">COVID-19: News and updates for Massachusetts</span>
+                    </div>
+                    <div class="wd-right-child">
+                        <img src="images/img_post_covid.png">
+                    </div>
+                </li>
+                <li class="wd-post-article-item">
+                    <div class="wd-left-child">
+                        <span class="wd-post-author">Bloomberg Opinion</span>
+                        <i class="fas fa-user-check wd-icon-verified"></i>
+                        <span class="wd-post-topic wd-post-tag">Yesterday</span>
+                        <span class="wd-post-title row">Thinking about getting a booster? Read this first.</span>
+                    </div>
+                    <div class="wd-right-child">
+                        <img src="images/img_post_booster.jpg">
+                    </div>
+                </li>
+                <li class="wd-post-trend-item">
+                    <div>
+                        <span class="wd-post-topic">Trending in United States</span>
+                        <span class="wd-tweet-setting">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                        <span class="wd-post-title row">Wonder Bread</span>
+                        <span class="wd-post-tweet-count row">1,259 Tweets</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</main>
 </body>
 </html>
