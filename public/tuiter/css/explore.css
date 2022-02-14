@@ -3,13 +3,13 @@ body{
     background-color: black;
     font-family: sans-serif;
 }
-#main{
+.wd-main{
     border: solid 1px  rgb(47, 51, 54);
     /*border-color:;*/
     padding-left: 16px;
     padding-right: 16px;
 }
-.grid-row{
+.wd-grid-row{
     clear: both;
 }
 .wd-searchbar{
@@ -39,8 +39,7 @@ body{
 .wd-searchbar-section{
     margin-top: 10px;
 }
-.pos-relative{
-}
+
 .wd-searchbar-holder{
     background-color: darkgray;
     border-radius: 10px;
@@ -52,7 +51,7 @@ body{
     padding-right: 12px;
 }
 
-.grid-col-half-page{
+.wd-grid-col-half-page{
     width: 75%;
     float: left;
 }
@@ -75,7 +74,7 @@ a{
     padding: 16px;
 }
 
-.active-tab {
+.wd-active-tab {
     color: rgb(29,161,242);
     border-bottom: solid 4px rgb(29,161,242);
 }
@@ -152,6 +151,6 @@ a{
     font-stretch: ultra-expanded;
     color: rgb(110, 118, 125);
 }
-.row{
+.wd-row{
     display: block;
 }
