@@ -3,10 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/bookmarks.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
-<h1>
-    This is bookmarks page
-</h1>
+<header class="wd-header">
+    <span class="wd-page-header">Bookmarks</span>
+    <a href="#!" class="anchor-no-effect">
+                        <span class="wd-tweet-setting wd-row">
+                            <i class="fas fa-ellipsis-h blue"></i>
+                        </span>
+    </a>
+    <span class="wd-page-header-handle wd-row">@WebDev</span>
+</header>
+<main class="wd-main">
+    <ul class="wd-bookmark-list">
+        <li class="wd-bookmark-item">
+            <div class="wd-left-child">
+                <img class="wd-avatar" src="images/img_post_covid.png">
+            </div>
+            <div class="wd-right-child">
+                <div class="wd-item-head">
+                    <span class="wd-item-author">Robert Zubrin</span>
+                    <span class="wd-item-author-tag">@rob</span>
+                    <span class="wd-item-author-tag dot-before">Jul 31</span>
+                    <a href="#!" class="anchor-no-effect">
+                        <span class="wd-tweet-setting wd-row">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                    <span class="wd-item-content wd-row">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum in pulvinar ante, a vestibulum diam. Fusce auctor, libero quis pulvinar cursus, nisl diam congue urna, sit amet posuere odio urna sed ex. Duis at tincidunt neque. Etiam risus lacus, cursus at sollicitudin sed, luctus eget massa.</span>
+                </div>
+                <div class="wd-item-body">
+                    <img src="images/img_news_post.jpeg" class="wd-item-poster-img">
+                    <span class="wd-body-title wd-row">Curabitur pellentesque tellus ac erat suscipit ullamcorz</span>
+                    <span class="wd-body-content wd-row">Curabitur pellentesque tellus ac erat suscipit ullamcorper.
+                        Pellentesque aliquam neque sit amet turpis dapibus molestie. Cras id dui nisi. Integer ullamcorper interdum quam, eget maximus nibh rutrum at. Donec mattis urna vel mi ultrices lobortis. Donec porta massa in risus scelerisque eleifend. Morbi pretium, est id rhoncus blandit, neque dolor consectetur nibh, non vehicula magna massa sit amet purus. Nulla quam risus, lobortis et accumsan non, pulvinar sit amet metus. Ut varius diam et pharetra suscipit. Quisque eget neque mi. Duis egestas luctus ex ac lacinia. Vivamus egestas placerat quam in laoreet.</span>
+                </div>
+                <div class="wd-item-footer">
+                    <ul class="wd-reaction-list">
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                                <span class="wd-reaction-icon">
+                                    <i class="far fa-comment"></i>
+                                </span>
+                                <span class="wd-reaction-count">22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-retweet"></i>
+                            </span>
+                                <span class="wd-reaction-count">9</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-heart reaction-active"></i>
+                            </span>
+                                <span class="wd-reaction-count reaction-active">24</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </li>
+        <li class="wd-bookmark-item">
+            <div class="wd-left-child">
+                <img class="wd-avatar" src="images/img_news_post.jpeg">
+            </div>
+            <div class="wd-right-child">
+                <div class="wd-item-head">
+                    <span class="wd-item-author">Joel Stanson</span>
+                    <span class="wd-item-author-tag">@joe</span>
+                    <span class="wd-item-author-tag dot-before">Aug 01</span>
+                    <a href="#!" class="anchor-no-effect">
+                        <span class="wd-tweet-setting wd-row">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                    <span class="wd-item-content wd-row"> Vestibulum in pulvinar ante, a vestibulum diam. Fusce
+                        auctor, libero quis pulvinar cursus, nisl diam congue urna, sit amet posuere odio urna sed ex. Duis at tincidunt neque. Etiam risus lacus, cursus at sollicitudin sed, luctus eget massa.</span>
+                </div>
+                <div class="wd-item-body">
+                    <img src="images/img_post_booster.jpg" class="wd-item-poster-img">
+                    <span class="wd-body-title wd-row">Pellentesque aliquam neque sit amet turpis dapibus molestie.</span>
+                    <span class="wd-body-content wd-row"> Pellentesque aliquam neque sit amet turpis dapibus
+                        molestie. Cras id dui nisi. Integer ullamcorper interdum quam, eget maximus nibh rutrum at. Donec mattis urna vel mi ultrices lobortis. Donec porta massa in risus scelerisque eleifend. Morbi pretium, est id rhoncus blandit, neque dolor consectetur nibh, non vehicula magna massa sit amet purus. Nulla quam risus, lobortis et accumsan non, pulvinar sit amet metus. Ut varius diam et pharetra suscipit. Quisque eget neque mi. Duis egestas luctus ex ac lacinia. Vivamus egestas placerat quam in laoreet.</span>
+                </div>
+                <div class="wd-item-footer">
+                    <ul class="wd-reaction-list">
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                                <span class="wd-reaction-icon">
+                                    <i class="far fa-comment"></i>
+                                </span>
+                                <span class="wd-reaction-count">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-retweet"></i>
+                            </span>
+                                <span class="wd-reaction-count">19</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-heart reaction-active"></i>
+                            </span>
+                                <span class="wd-reaction-count reaction-active">54</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="anchor-no-effect">
+                            <span class="wd-reaction-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</main>
+
 </body>
 </html>
