@@ -8,14 +8,20 @@ body{
     /*border-color:;*/
     padding-left: 16px;
     padding-right: 16px;
+    width: 800px;
+    margin-inline: auto;
 }
 .wd-grid-row{
     clear: both;
 }
+
+.wd-gray{
+    color: #202327;
+}
 .wd-searchbar{
-    background-color: darkgray;
+    background-color: #202327;
     color:#ebe3e3;
-    height: 20px;
+    height: 30px;
     width: 90%;
     float: right;
     border: none;
@@ -41,7 +47,7 @@ body{
 }
 
 .wd-searchbar-holder{
-    background-color: darkgray;
+    background-color: #202327;
     border-radius: 10px;
     /*float: left;*/
 }
@@ -65,7 +71,7 @@ a{
     font-size: 15px;
     padding: 16px;
     list-style-type: none;
-    margin: 0px;
+    margin: 10px 0px 0px;
 }
 
 .wd-tab-list>li{
