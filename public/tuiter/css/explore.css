@@ -9,8 +9,8 @@
 }
 /*#6e767d*/
 .my-btn{
-    background-color: var(--button-color);
-    color: var(--font-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .follow-btn{
@@ -36,4 +36,26 @@
 }
 .w-15{
     width: 15%;
+}
+
+.active{
+    font-weight: bold;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    border: 0px !important;
+}
+.nav-link .ac{
+    border-bottom: solid 2px blue !important;
+}
+
+.custom-border{
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+.active-tab-border{
+    border-bottom: 4px solid var(--ternary-color);
+}
+
+.width-35p{
+    width: 35px;
 }

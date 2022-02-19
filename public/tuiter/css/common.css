@@ -1,12 +1,22 @@
+/*:root{*/
+/*    --background-color:white;*/
+/*    --button-color:#0c6dfd;*/
+/*    --font-color:white;*/
+/*    --icon-color:black;*/
+/*    --highlight-color:#0c6dfd;*/
+/*    --border-color:#6e767d;*/
+/*    --input-field-color:white;*/
+/*}*/
 :root{
-    --background-color:white;
+    --background-color:black;
     --button-color:#0c6dfd;
     --font-color:white;
     --icon-color:black;
     --highlight-color:#0c6dfd;
-    --border-color:#6e767d;
+    /*--border-color:#6e767d;*/
     --input-field-color:white;
 }
+
 .bg-background-color{
     background-color: var(--background-color);
 }
@@ -28,6 +38,48 @@
    color: var(--button-color);
 }
 
-/*body { background-color: var(--blue); }*/
 
-/*h2 { border-bottom: 2px solid var(--blue); }*/
+
+.bg-font-color{
+    background-color: var(--font-color);
+}
+.f-font-color{
+    color: var(--font-color);
+}
+
+/*------- New IMPL-------*/
+:root{
+    --primary-color:black;
+    --secondary-color:#d9d9d9;  /*white*/
+    --ternary-color:#0c6dfd;
+    --border-color:#363d45;
+}
+
+
+.primary-bg-color{
+    background-color: var(--primary-color);
+}
+.primary-color{
+    color: var(--primary-color);
+}
+
+.secondary-bg-color{
+    background-color: var(--secondary-color);
+}
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.ternary-bg-color{
+    background-color: var(--ternary-color);
+}
+.ternary-color{
+    color: var(--ternary-color);
+}
+
+.border-bg-color{
+    background-color: var(--border-color);
+}
+.border-color{
+    color: var(--border-color);
+}
