@@ -9,8 +9,8 @@
 }
 /*#6e767d*/
 .my-btn{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--ternary-color);
+    color: var(--secondary-color);
 }
 
 .follow-btn{
@@ -20,6 +20,8 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .recomm-text{
