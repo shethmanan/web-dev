@@ -46,6 +46,10 @@
     color: var(--secondary-color) !important;
     border: 0px !important;
 }
+.white-type:focus {
+    color: #fff;
+}
+
 .nav-link .ac{
     border-bottom: solid 2px blue !important;
 }
