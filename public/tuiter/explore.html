@@ -3,118 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="css/explore.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/explore.css">
+    <!--    <link type="text/css" rel="stylesheet" href="css/common.css">-->
+    <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
-<!--<h4>-->
-<!--    back-->
-<!--</h4>-->
-<main class="wd-main">
-    <div class="wd-searchbar-section pos-relative wd-grid-row">
+<div class="container mt-2 mb-2">
+    <div class="row">
+        <div class="col-sm-2 ">
+            <div class="list-group">
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fab fa-twitter"></i>
 
-        <span class="wd-searchbar-holder wd-grid-col-half-page">
-            <i class="fas fa-search wd-search-tweet-icon"></i>
-            <input type="text" class="wd-searchbar" size="50"
-                   placeholder="Search Tuiter">
-        </span>
-        <span class="wd-searchbar-setting">
-            <a href="explore-settings.html">
-                <i class="fas fa-cog"></i>
-            </a></span>
-    </div>
-    <div style="margin: 1px"></div>
-    <br>
-    <div class="wd-tab-head">
-        <div>
-            <ul class="wd-tab-list">
-                <li class="wd-active-tab">For You</li>
-                <li>Trending</li>
-                <li>COVID-19</li>
-                <li>News</li>
-                <li>Sports</li>
-                <li>Entertainment</li>
+
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fas fa-home"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Home</span>
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action active" aria-current="true">
+                    <i class="fas fa-hashtag"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Explore</span>
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fas fa-bell"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Notifications</span>
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fas fa-envelope"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Messages</span>
+                </a>
+                <a href="#!"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Bookmarks</span>
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fas fa-list"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Lists</span>
+
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"></i>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">Profile</span>
+                </a>
+                <a href="#!" class="list-group-item list-group-item-action">
+                    <span class="fa-stack fa-1x more-icon">
+                        <i class="fas fa-circle fa-stack-1x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse ellipsis-small"></i>
+                    </span>
+                    <span class="d-none d-l-inline-block d-xl-inline-block">More</span>
+                </a>
+                <a href="#!">
+                    <button type="button" class="btn mt-1 rounded-pill w-100 my-btn">Tweet</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10 col-lg-7 ">
+            <div class="row">
+                <div class="col-11">
+                    <div class="input-group border rounded-pill">
+                        <span class="input-group-text bg-transparent border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" placeholder="Search Twitter" class="form-control bg-transparent border-0">
+                    </div>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-cog fa-2x p-1 f-button-color"></i>
+                </div>
+            </div>
+            <ul class="nav nav-tabs mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+
+            <ul class="list-group border-0">
+                <li class="list-group-item border-0 m-0 p-0">
+                    <div class="position-relative text-white">
+                        <img src="images/spacex.jpg" class="img-fluid" alt="tesla">
+                        <div class="fw-bold fs-2 position-absolute text-in-image">SpaceX's
+                            Starship</div>
+                    </div>
+
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                    <div class="left-child w-75">
+                        <span class="f-border-color">Web Development</span>
+                        <span class="row"></span>
+                        <span>
+                            <span class="fw-bold">ReactJS</span>
+                            <i class="fas fa-check-circle ml-2"></i>
+                            <small class="f-border-color">- 2h</small>
+                        </span>
+                        <span class="row"></span>
+                        <span class="fw-bold">ReactJS is a component based front-end library that makes it very easy to
+                            build
+                            Single Page Applications of SPAs</span>
+                    </div>
+                    <div class="right-child w-25">
+                        <img src="images/react.png" class="img-fluid" alt="tesla">
+                    </div>
+                </li>
+
+                <li class="list-group-item d-flex align-items-start">
+                    <div class="left-child w-75">
+
+                        <span>
+                            <span class="fw-bold">JavaScript</span>
+                            <i class="fas fa-check-circle ml-2"></i>
+                            <small class="f-border-color">- 2h</small>
+                        </span>
+                        <span class="row"></span>
+                        <span class="fw-bold">JavaScript is a programming language that can run on browsers as
+                            well as on desktops</span>
+                        <span class="row"></span>
+                        <span class="f-border-color">123K Tweets</span>
+                    </div>
+                    <div class="right-child w-25">
+                        <img src="images/javascript.jpg" class="img-fluid round" alt="tesla">
+                    </div>
+                </li>
+
+                <li class="list-group-item d-flex align-items-start">
+                    <div class="left-child w-75">
+                        <span class="f-border-color">Web Development</span>
+                        <span class="row"></span>
+                        <span>
+                            <span class="fw-bold">jQuery</span>
+                        </span>
+                        <span class="row"></span>
+                        <span class="f-border-color">123K Tweets</span>
+                    </div>
+                    <div class="right-child w-25">
+                        <img src="images/jquery.png" class="img-fluid" alt="tesla">
+                    </div>
+                </li>
+
+                <li class="list-group-item d-flex align-items-start">
+                    <div class="left-child w-75">
+                        <span class="f-border-color">Web Development</span>
+                        <span class="row"></span>
+                        <span>
+                            <span class="fw-bold">NodeJS</span>
+                            <i class="fas fa-check-circle ml-2"></i>
+                            <small class="f-border-color">- 2h</small>
+                        </span>
+                        <span class="row"></span>
+                        <span class="f-border-color">123K Tweets</span>
+                    </div>
+                    <div class="right-child w-25">
+                        <img src="images/nodejs.png" class="img-fluid" alt="tesla">
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-lg-3 d-lg-block d-sm-none">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="recomm-name fw-bold">Who to follow</span>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <img src="images/java.jpg" class="rounded-circle img-fluid w-75">
+                        </div>
+                        <div class="col-sm-9  recomm-text p-0">
+                            <span class="recomm-name fw-bold">Java</span>
+                            <i class="fas fa-check-circle"></i>
+                            <span class="recomm-tag d-block">@Java</span>
+                        </div>
+                        <button type="button" class="btn rounded-pill my-btn follow-btn">Follow</button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <img src="images/relativity.png" class="rounded-circle img-fluid w-75">
+                        </div>
+                        <div class="col-sm-9 p-0 recomm-text">
+                            <span class="recomm-name fw-bold ">Relativity Space</span>
+                            <i class="fas fa-check-circle nowrap"></i>
+                            <span class="recomm-tag d-block">@relativityspace</span>
+                        </div>
+                        <button type="button" class="btn rounded-pill my-btn follow-btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <img src="images/virgin.png" class="rounded-circle img-fluid w-75">
+                        </div>
+                        <div class="col-sm-9 p-0 recomm-text">
+                            <span class="recomm-name fw-bold ">Virgin Galactic</span>
+                            <i class="fas fa-check-circle nowrap"></i>
+                            <span class="recomm-tag d-block">@virgingalactic</span>
+                        </div>
+                        <button type="button" class="btn rounded-pill my-btn follow-btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <img src="images/nasa.png" class="rounded-circle img-fluid w-75">
+                        </div>
+                        <div class="col-sm-9 p-0 recomm-text">
+                            <span class="recomm-name fw-bold ">NASA</span>
+                            <i class="fas fa-check-circle nowrap"></i>
+                            <span class="recomm-tag d-block">@nasa</span>
+                        </div>
+                        <button type="button" class="btn rounded-pill my-btn follow-btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <img src="images/tesla.jpg" class="rounded-circle img-fluid w-75">
+                        </div>
+                        <div class="col-sm-9 p-0 recomm-text">
+                            <span class="recomm-name fw-bold ">Tesla</span>
+                            <i class="fas fa-check-circle"></i>
+                            <span class="recomm-tag d-block">@tesla</span>
+                        </div>
+                        <button type="button" class="btn rounded-pill my-btn follow-btn">Follow</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
-    <div class="wd-tab-body">
-        <div>
-            <ul class="wd-post-list">
-                <li class="wd-post-trend-item">
-                    <div>
-
-                        <span class="wd-post-topic">Trending in Science</span>
-                        <span class="wd-tweet-setting">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </span>
-                        <span class="wd-post-title wd-row">Starship</span>
-                        <span class="wd-post-tweet-count wd-row">55.5K Tweets</span>
-                    </div>
-                </li>
-                <li class="wd-post-trend-item">
-                    <div>
-                        <span class="wd-post-topic">Sports</span>
-                        <span class="wd-post-topic wd-post-tag">Trending</span>
-                        <span class="wd-tweet-setting">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </span>
-                        <span class="wd-post-title wd-row">Joe Rogan</span>
-                        <span class="wd-post-tweet-count wd-row">5,218 Tweets</span>
-                    </div>
-                </li>
-                <li class="wd-post-article-item">
-                    <div class="wd-left-child">
-                        <span class="wd-post-author">The New York Times
-                        </span>
-                        <i class="fas fa-user-check wd-icon-verified"></i>
-                        <span class="wd-post-topic wd-post-tag">Yesterday</span>
-                        <span class="wd-post-title wd-row">CNN's Cuomo conundrum: A star anchor with a brother in
-                            trouble</span>
-                    </div>
-                    <div class="wd-right-child">
-                        <img src="images/img_news_post.jpeg">
-                    </div>
-
-                </li>
-                <li class="wd-post-article-item">
-                    <div class="wd-left-child">
-                        <span class="wd-post-topic">Covid-19</span>
-                        <span class="wd-post-tag wd-post-topic">LIVE</span>
-
-                        <span class="wd-post-title wd-row">COVID-19: News and updates for Massachusetts</span>
-                    </div>
-                    <div class="wd-right-child">
-                        <img src="images/img_post_covid.png">
-                    </div>
-                </li>
-                <li class="wd-post-article-item">
-                    <div class="wd-left-child">
-                        <span class="wd-post-author">Bloomberg Opinion</span>
-                        <i class="fas fa-user-check wd-icon-verified"></i>
-                        <span class="wd-post-topic wd-post-tag">Yesterday</span>
-                        <span class="wd-post-title wd-row">Thinking about getting a booster? Read this first.</span>
-                    </div>
-                    <div class="wd-right-child">
-                        <img src="images/img_post_booster.jpg">
-                    </div>
-                </li>
-                <li class="wd-post-trend-item">
-                    <div>
-                        <span class="wd-post-topic">Trending in United States</span>
-                        <span class="wd-tweet-setting">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </span>
-                        <span class="wd-post-title wd-row">Wonder Bread</span>
-                        <span class="wd-post-tweet-count wd-row">1,259 Tweets</span>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</main>
+</div>
 </body>
 </html>

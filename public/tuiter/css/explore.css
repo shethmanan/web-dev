@@ -1,162 +1,33 @@
-body{
-    margin: 0px;
-    background-color: black;
-    font-family: sans-serif;
+@import "common.css";
+.more-icon{
+    width: 1em !important;
+    height: 1em;
+    line-height: 1em;
 }
-.wd-main{
-    border: solid 1px  rgb(47, 51, 54);
-    /*border-color:;*/
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 800px;
-    margin-inline: auto;
+.ellipsis-small{
+    font-size: small;
 }
-.wd-grid-row{
-    clear: both;
+/*#6e767d*/
+.my-btn{
+    background-color: var(--button-color);
+    color: var(--font-color);
 }
 
-.wd-gray{
-    color: #202327;
-}
-.wd-searchbar{
-    background-color: #202327;
-    color:#ebe3e3;
-    height: 30px;
-    width: 90%;
-    float: right;
-    border: none;
-    border-radius: 10px;
-}
-.wd-searchbar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ebe3e3;
-    opacity: 1; /* Firefox */
-}
-.wd-search-tweet-icon{
-    color:white;
-    padding: 5px;
-    margin-left: 10px;
+.follow-btn{
+    position: absolute;
+    right: 10px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
-
-.wd-searchbar:focus{
-    outline: none!important;
-    box-shadow: none!important;
-}
-.wd-searchbar-section{
-    margin-top: 10px;
-}
-
-.wd-searchbar-holder{
-    background-color: #202327;
-    border-radius: 10px;
-    /*float: left;*/
-}
-.wd-searchbar-setting{
-    float: right;
-    color: rgb(29,161,242);
-    padding-right: 12px;
-}
-
-.wd-grid-col-half-page{
-    width: 75%;
-    float: left;
-}
-a{
-    text-decoration: none;
-    color: rgb(29,161,242);
-}
-
-.wd-tab-list{
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-    padding: 16px;
-    list-style-type: none;
-    margin: 10px 0px 0px;
-}
-
-.wd-tab-list>li{
-    display: inline;
-    font-weight: bold;
-    padding: 16px;
-}
-
-.wd-active-tab {
-    color: rgb(29,161,242);
-    border-bottom: solid 4px rgb(29,161,242);
-}
-
-
-/*POSTS*/
-.wd-post-list{
-    color: white;
-    list-style-type: none;
-    padding-left: 20px;
-    /*border: solid 1px rgb(110, 118, 125);*/
-}
-.wd-post-list .wd-post-topic{
-    font-size: 13px;
-}
-.wd-post-list .wd-post-title{
-    font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.wd-post-list .wd-post-author{
-    font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.wd-post-tag:before{
-    content: "";
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+.recomm-text{
     position: relative;
-    top: -2px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background-color: white;
-}
-.wd-tweet-setting{
-    color: rgb(110, 118, 125);
-    font-size: small;
-    float: right;
+    z-index: 2;
 }
 
-.wd-icon-verified{
-    font-size: small;
-}
-
-.wd-post-trend-item{
-    padding: 10px;
-    border: solid 1px rgb(110, 118, 125);
-}
-.wd-post-article-item{
-    padding: 10px;
-    padding-right: 16px;
-    border: solid 1px rgb(110, 118, 125);
-    display: flex;
-    align-items: flex-start;
-}
-.wd-left-child{
-    width: 75%;
-}
-.wd-right-child{
-    width: 25%;
-}
-.wd-post-article-item img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    float: right;
-}
-.wd-post-list .wd-post-tweet-count, .wd-post-topic{
-    font-size: 13px;
-    font-stretch: ultra-expanded;
-    color: rgb(110, 118, 125);
-}
-.wd-row{
-    display: block;
+.text-in-image{
+    bottom: 10px;
+    left: 10px;
 }

@@ -1,0 +1,33 @@
+:root{
+    --background-color:white;
+    --button-color:#0c6dfd;
+    --font-color:white;
+    --icon-color:black;
+    --highlight-color:#0c6dfd;
+    --border-color:#6e767d;
+    --input-field-color:white;
+}
+.bg-background-color{
+    background-color: var(--background-color);
+}
+.f-background-color{
+    color: var(--background-color);
+}
+
+.bg-border-color{
+    background-color: var(--border-color);
+}
+.f-border-color{
+    color: var(--border-color);
+}
+
+.bg-button-color{
+    background-color: var(--button-color);
+}
+.f-button-color{
+   color: var(--button-color);
+}
+
+/*body { background-color: var(--blue); }*/
+
+/*h2 { border-bottom: 2px solid var(--blue); }*/
