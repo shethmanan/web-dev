@@ -83,3 +83,7 @@
 .border-color{
     color: var(--border-color);
 }
+
+.white-typer:active{
+    color: white;
+}
