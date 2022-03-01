@@ -8,7 +8,7 @@ const PostItem = (post) => {
                 <div class="wd-item-head">
                     <span class="wd-item-author">${post.userName}</span>
                     <span class="wd-item-author-tag">${post.tag}</span>
-                    <span class="wd-item-author-tag dot-before">${post.time}</span>
+                    <span class="wd-item-author-tag dot-before">- ${post.time}</span>
                     <a href="#!" class="anchor-no-effect">
                         <span class="wd-tweet-setting wd-row">
                             <i class="fas fa-ellipsis-h"></i>
@@ -18,8 +18,14 @@ const PostItem = (post) => {
                 </div>
                 <div class="wd-item-body">
                     <img src="${post.bannerUrl}" class="wd-item-poster-img">
-                    <span class="wd-body-title wd-row ${post.overlayTextPresent === 'false' ? "d-none" : "" }">${post.overlayTextHeading}</span>
-                    <span class="wd-body-content wd-row ${post.overlayTextPresent === 'false' ? "d-none" : "" }">${post.overlayText}</span>
+                    <span class="wd-body-title wd-row ${post.overlayTextPresent === 'false' ? "d-none" : ""}">${post.overlayTextHeading}</span>
+                    <span class="wd-body-content wd-row ${post.overlayTextPresent === 'false' ? "d-none" : ""}">${post.overlayText}</span>
+                    <span class="wd-body-content wd-row ${post.overlayTextPresent === 'false' ? "d-none" : ""}">
+                        <a class="text-secondary anchor-no-effect" href="${post.externalLink}">
+                            <i class="fas fa-link"></i>
+                            ${post.overlayLinkText}
+                        </a>
+                    </span>
                 </div>
                 <div class="wd-item-footer">
                     <ul class="wd-reaction-list">
