@@ -17,7 +17,7 @@ const NavigationSidebar = ({
                     <span className="d-none d-l-inline-block d-xl-inline-block ml-5">Home</span>
                 </Link>
                 {/* <a className={`${activeComponent === 'home' ? 'active' : ''} list-group-item`}*/}
-                {/*    href="../HomeScreen/home.html">*/}
+                {/*    href="../HomeScreen/oldhome.html">*/}
 
                 {/*     <i className="fas fa-home">*/}
                 {/*     </i>*/}
