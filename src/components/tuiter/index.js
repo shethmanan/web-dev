@@ -14,26 +14,8 @@ const Tuiter = () => {
     return (
         <>
             <HomeScreen/>
-            {/*<PostList/>*/}
-            {/*<PostItem/>*/}
-            <ExploreScreen/>
-            {/*<PostSummaryList/>*/}
-            {/*<ExploreComponent/>*/}
-            {/*<NavigationSidebar activeComponent="home"/>*/}
-            {/*<WhoToFollowListItem/>*/}
-            {/*<WhoToFollowList/>*/}
-            {/*<Link to="/hello">*/}
-            {/*    Hello*/}
-            {/*</Link> |*/}
-            {/*<Link to="/">*/}
-            {/*    Labs*/}
-            {/*</Link>*/}
-
-            {/*Home screen*/}
-
         </>
 
     );
-
 }
 export default Tuiter;
