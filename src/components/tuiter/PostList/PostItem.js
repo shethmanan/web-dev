@@ -25,7 +25,7 @@ const PostItem = ({
         <>
             <li className="wd-bookmark-item">
                 <div className="wd-left-child">
-                    <img className="wd-avatar" src={post.image}>
+                    <img className="wd-avatar" alt="avatar" src={post.image}>
                     </img>
                 </div>
                 <div className="wd-right-child">
@@ -43,7 +43,7 @@ const PostItem = ({
                             href={post.externalLink}>{post.tagInTitle}</a> {post.topic2}</span>
                     </div>
                     <div className="wd-item-body">
-                        <img src={post.bannerUrl} className="wd-item-poster-img">
+                        <img src={post.bannerUrl} alt="banner" className="wd-item-poster-img">
                         </img>
                         <span className={`wd-body-title wd-row ${post.overlayTextPresent === 'false' ? "d-none"
                             : ""}`}>{post.overlayTextHeading}</span>
