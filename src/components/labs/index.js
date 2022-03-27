@@ -4,14 +4,16 @@ import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "./todo/TodoList";
-const Index = () => {
+import ReduxExamples from "./redux-examples";
+const Labs = () => {
     return (
         <>
             <h1>Labs</h1>
-            <TodoList/>
-            <Styles/>
-            <Classes/>
-            <ConditionalOutput/>
+            <ReduxExamples/>
+            {/*<TodoList/>*/}
+            {/*<Styles/>*/}
+            {/*<Classes/>*/}
+            {/*<ConditionalOutput/>*/}
 
             <Link to="/hello">
                 Hello
@@ -24,4 +26,4 @@ const Index = () => {
     );
 
 }
-export default Index;
+export default Labs;
