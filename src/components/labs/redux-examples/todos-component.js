@@ -12,6 +12,7 @@ const Todos = () => {
             newTodo
         };
         dispatch(action);
+        setTodo({do: '', done: false});
     }
     const todoChangeHandler = (event) => {
         const todoNewValue = event.target.value;
