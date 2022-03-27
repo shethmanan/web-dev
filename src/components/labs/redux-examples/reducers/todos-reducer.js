@@ -25,7 +25,6 @@ const todosReducer = (state = data, action) => {
         default:
             return state;
     }
-    return data;
 }
 
 export default todosReducer;
