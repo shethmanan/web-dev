@@ -1,5 +1,4 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar/index";
 import ExploreComponent from "./ExploreComponent";
 
 const ExploreScreen = () => {

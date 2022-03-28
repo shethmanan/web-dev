@@ -2,7 +2,6 @@ import React from "react";
 import './tuitlist.css';
 import {useDispatch} from "react-redux";
 import TuitStat from "./tuit-stat";
-import TuitStats from "./tuit-stat";
 
 const TuitItem = ({
                       post = {
