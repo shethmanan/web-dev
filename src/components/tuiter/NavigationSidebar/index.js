@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
 
-const NavigationSidebar = ({
-                               activeComponent = 'explore'
-                           }) => {
-        console.log(activeComponent);
+const NavigationSidebar = () => {
+    let activeComponent = useSelector(({currentPage}) => currentPage);
+    // let activeComponent = 'profile';
     return (
         <>
             <div className="list-group">
@@ -43,10 +43,13 @@ const NavigationSidebar = ({
                     <i className="fas fa-list"></i>
                     <span className="d-none d-l-inline-block d-xl-inline-block ml-5">Lists</span>
                 </a>
-                <a className={`${activeComponent === 'profile' ? 'active' : ''} list-group-item`} href="#!">
+
+                <Link className={`${activeComponent === 'profile' ? 'active' : ''} list-group-item`}
+                      to="/tuiter/profile">
                     <i className="fas fa-user"></i>
                     <span className="d-none d-l-inline-block d-xl-inline-block ml-5">Profile</span>
-                </a>
+                </Link>
+
                 <a className={`list-group-item ${activeComponent === "more" ? "active" : ""}`} href="#!">
                     <i className="fas fa-circle"></i>
                     <span className="d-none d-l-inline-block d-xl-inline-block ml-5">More</span>

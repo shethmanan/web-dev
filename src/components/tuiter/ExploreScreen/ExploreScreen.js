@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ExploreComponent from "./ExploreComponent";
+import {useDispatch} from "react-redux";
 
 const ExploreScreen = () => {
+    const dispatcher = useDispatch();
+    useEffect(() => {
+        dispatcher({type:"update-page",currentPage:"explore"});
+    }, [dispatcher]);
     return (
         <>
             <div className="row mt-2">

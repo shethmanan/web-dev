@@ -6,9 +6,10 @@ import whoReducer from "./reducers/who-reducer";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./who-to-follow-list";
 import tuitsReducer from "./reducers/tuits-reducer";
-
-
-const reducer = combineReducers({followList: whoReducer,tuitList: tuitsReducer});
+import personaldetailReducer from "./reducers/personaldetail-reducer";
+import activepageReducer from "./reducers/activepage-reducer";
+const reducer = combineReducers({followList: whoReducer,tuitList: tuitsReducer,
+    personalDetail: personaldetailReducer, currentPage: activepageReducer});
 const store = createStore(reducer);
 
 const Tuiter = () => {

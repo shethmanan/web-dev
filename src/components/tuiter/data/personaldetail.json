@@ -1,0 +1,11 @@
+{
+  "firstName": "Manan",
+  "lastName": "Sheth",
+  "handle": "m.sheth",
+  "profilePicture": "../../tuiter/images/profile.jpg",
+  "bannerPic": "../../tuiter/images/spacex.jpg",
+  "bio": "MSCS@Northeastern University | Software Engineer | Tech Enthusiast | Love travelling, music and movies",
+  "website": "https://www.linkedin.com/in/shethmanan/",
+  "location": "Boston, MA", "dateOfBirth": "Aug 01, 2000", "dateJoined": "Feb, 2015",
+  "followingCount": 312, "followersCount": 180, "tuits": 121
+}
