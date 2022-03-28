@@ -1,0 +1,7 @@
+.mr-3{
+    margin-left: 3%;
+}
+.border-bottom-only{
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}

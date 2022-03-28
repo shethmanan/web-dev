@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 const NavigationSidebar = ({
                                activeComponent = 'explore'
                            }) => {
+        console.log(activeComponent);
     return (
         <>
             <div className="list-group">
@@ -11,18 +12,11 @@ const NavigationSidebar = ({
                     <i className="fab fa-twitter">
                     </i></a>
                 <Link className={`${activeComponent === 'home' ? 'active' : ''} list-group-item`}
-                      to="/tuiter/home">
+                      to="/tuiter/">
                     <i className="fas fa-home">
                     </i>
                     <span className="d-none d-l-inline-block d-xl-inline-block ml-5">Home</span>
                 </Link>
-                {/* <a className={`${activeComponent === 'home' ? 'active' : ''} list-group-item`}*/}
-                {/*    href="../HomeScreen/oldhome.html">*/}
-
-                {/*     <i className="fas fa-home">*/}
-                {/*     </i>*/}
-                {/*     <span className="d-none d-l-inline-block d-xl-inline-block ml-10">Home</span>*/}
-                {/*</a>*/}
 
                 <Link className={`${activeComponent === 'explore' ? 'active' : ''} list-group-item`}
                       to="/tuiter/explore">
