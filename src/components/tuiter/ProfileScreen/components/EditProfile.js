@@ -50,11 +50,11 @@ const EditProfile = () => {
                 </div>
             </div>
             <div>
-                <img src={details.bannerPic} className="h-10"></img>
+                <img src={details.bannerPic} className="h-10" alt={"banner"}></img>
             </div>
             <div>
                 <img src={details.profilePicture}
-                     className="img-thumbnail rounded-circle w-25 overlapProfile">
+                     className="img-thumbnail rounded-circle w-25 overlapProfile" alt={"profile"}>
                 </img>
             </div>
             <div className="mb-3">

@@ -37,11 +37,11 @@ const PersonalDetail = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={details.bannerPic} className="h-10"></img>
+                    <img src={details.bannerPic} className="h-10" alt={"banner"}></img>
                 </div>
                 <div>
                     <img src={details.profilePicture}
-                         className="img-thumbnail rounded-circle w-25 overlapProfile">
+                         className="img-thumbnail rounded-circle w-25 overlapProfile" alt={"profile"}>
                     </img>
 
                     <Link className="btn border-1 border-white rounded-pill fw-bold mt-2 float-right flr"

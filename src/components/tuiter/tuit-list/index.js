@@ -7,7 +7,7 @@ const TuitList = () => {
     const TuitList = useSelector(({tuitList}) => tuitList);
     const dispatch = useDispatch();
 
-    useEffect(() => findAllTuits(dispatch), []);
+    useEffect(() => findAllTuits(dispatch));
 
 
     return (

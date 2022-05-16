@@ -1,4 +1,3 @@
-import React from "react";
 import personalDetail from '../data/personaldetail.json';
 const PersonalDetailReducer = (state = personalDetail,action) => {
     switch (action.type){
