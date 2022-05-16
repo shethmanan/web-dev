@@ -1,10 +1,31 @@
 import {useDispatch} from "react-redux";
 import React from "react";
+import {updateTuit} from "../reducers/actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
+
+    const dislikeTuit = () => {
+        let updatedTuit = tuit;
+        if(updatedTuit.disliked){
+            updatedTuit.disliked = false;
+            updatedTuit.stats.dislikes--;
+        }else{
+            updatedTuit.disliked = true;
+            updatedTuit.stats.dislikes++;
+        }
+        updateTuit(dispatch,updatedTuit);
+    };
     const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
+        let updatedTuit = tuit;
+        if(updatedTuit.liked){
+            updatedTuit.liked = false;
+            updatedTuit.stats.likes--;
+        }else{
+            updatedTuit.liked = true;
+            updatedTuit.stats.likes++;
+        }
+        updateTuit(dispatch,updatedTuit);
     };
     return (
         <>
@@ -42,9 +63,22 @@ const TuitStats = ({tuit}) => {
                                     <i className="far fa-heart me-1"></i>
                                 }
                             </span>
-
-
                             <span className="wd-reaction-count reaction-active">{tuit.stats.likes}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" className="anchor-no-effect text-secondary">
+                            <span onClick={dislikeTuit}>
+                                {
+                                    tuit.disliked &&
+                                    <i className="far fa-thumbs-down" style={{color: 'lightblue'}}></i>
+                                }
+                                {
+                                    !tuit.disliked &&
+                                    <i className="far fa-thumbs-down"></i>
+                                }
+                            </span>
+                            <span className="wd-reaction-count reaction-active">{tuit.stats.dislikes}</span>
                         </a>
                     </li>
                     <li>

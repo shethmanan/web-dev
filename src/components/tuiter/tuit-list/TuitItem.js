@@ -2,7 +2,7 @@ import React from "react";
 import './tuitlist.css';
 import {useDispatch} from "react-redux";
 import TuitStat from "./tuit-stat";
-
+import {deleteTuit} from "../reducers/actions/tuits-actions"
 const TuitItem = ({
                       post = {
                           "_id": "123",
@@ -31,11 +31,7 @@ const TuitItem = ({
 
     const dispatcher  = useDispatch();
     const deleteTuitHandler = (tuiToDelete) => {
-        const action = {
-            type: "delete-tuit",
-            tuit: tuiToDelete
-        }
-        dispatcher(action);
+        deleteTuit(dispatcher,tuiToDelete);
     }
     return (
             <li className="wd-bookmark-item">

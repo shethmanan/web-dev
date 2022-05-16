@@ -1,22 +1,18 @@
 import React, {useState} from "react";
 import './whats-happening.css'
 import {useDispatch} from "react-redux";
+import {createTuit} from "../reducers/actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [newTuit, setNewTuit] = useState('');
     const setTuitHandler = (newTuit) => {
         setNewTuit(newTuit);
     }
+    const dispatcher = useDispatch();
     const addNewTuitHandler = () => {
-        console.log("New tuit:" + newTuit);
-        const action = {
-            type: "create-tuit",
-            tuit: newTuit
-        }
-        dispatcher(action);
+        createTuit(dispatcher,newTuit);
         setNewTuit('');
     }
-    const dispatcher = useDispatch();
     return (
         <>
             <div className="row">
